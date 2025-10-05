@@ -9,6 +9,7 @@
 node_modules/
 /blob-report/
 /playwright/.cache/
+/tests/subtests/
 
 # OS files
 .DS_Store
