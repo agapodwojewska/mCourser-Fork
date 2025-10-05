@@ -1,0 +1,15 @@
+# Node dependencies
+/node_modules
+
+# Playwright-specific
+/test-results/
+/playwright-report/
+/playwright-videos/
+/playwright-screenshots/
+node_modules/
+/blob-report/
+/playwright/.cache/
+
+# OS files
+.DS_Store
+Thumbs.db
