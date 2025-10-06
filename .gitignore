@@ -10,8 +10,7 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 /tests/subtests/
-tests-examples/
-
+/tests-examples/
 
 # OS files
 .DS_Store

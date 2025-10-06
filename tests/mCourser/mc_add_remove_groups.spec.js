@@ -23,4 +23,6 @@ test('test', async ({ page }) => {
   await page.getByRole('button', { name: 'Yes' }).click();
   await page.getByRole('button', { name: 'Close the alert.' }).click();
   await page.goto('https://www.mcourser.com/students/classes');
+  //  await page.goto('https://www.mcourser.com/students/classes');
+
 });
