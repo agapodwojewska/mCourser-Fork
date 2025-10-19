@@ -5,14 +5,15 @@ test('test', async ({ page }) => {
   await page.getByRole('button', { name: 'Close window with cookies' }).click();
   await page.getByRole('link', { name: 'Login' }).click();
   await page.getByRole('textbox', { name: 'username' }).click();
-  await page.getByRole('textbox', { name: 'username' }).fill('presentationteacher001');
+  await page.getByRole('textbox', { name: 'username' }).fill('autotestst01');
   await page.getByRole('textbox', { name: 'username' }).press('Tab');
-  await page.getByRole('textbox', { name: 'password' }).fill('pres001');
+  await page.getByRole('textbox', { name: 'password' }).fill('t');
   await page.getByRole('button', { name: 'Login' }).click();
   await page.getByRole('link', { name: 'Groups' }).click();
   await page.getByRole('textbox', { name: 'Please enter a new group\'s' }).click();
   await page.getByRole('textbox', { name: 'Please enter a new group\'s' }).fill('Group 21');
   await page.getByRole('button', { name: 'Add a group' }).click();
+  await page.waitForLoadState('networkidle');
   await page.getByRole('cell', { name: 'dashboard group Group 21' }).getByLabel('More actions').click();
   await page.getByRole('menuitem', { name: 'Edit Students' }).click();
   await page.locator('#mat-checkbox-3 > .mat-checkbox-layout > .mat-checkbox-inner-container').click();

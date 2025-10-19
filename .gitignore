@@ -11,6 +11,7 @@ node_modules/
 /playwright/.cache/
 /tests/subtests/
 /tests-examples/
+.gitignore
 
 # OS files
 .DS_Store
